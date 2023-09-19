@@ -10,7 +10,7 @@ public class Main {
         do {
             System.out.println("Escriba el número inicial (0 para salir): ");
             numInicial = sc.nextInt();
-            if(numInicial==0){
+            if(numInicial == 0){
                 System.exit(0);
             }
             System.out.println("Escriba el número final: ");
@@ -18,6 +18,7 @@ public class Main {
 
             int contador = 0;
 
+            System.out.println("Buscando primos...");
             for (int i = numInicial; i <= numFinal; i++) {
                 if (esPrimo(i)) {
                     contador++;
